@@ -4,9 +4,11 @@ public class Biblioteca {
     public Biblioteca(){
         this.libros = new ArrayList<>();
     }
+    //agrega el libro a la variable libros
     public void agregarLibros(Libro libro){
         libros.add(libro);
     }
+    // clase que muestra los libros, en caso de no tener nada que mostrar envia mensaje de error.
     public void mostrarLibros(){
         if (libros.isEmpty()){
             System.out.println("La biblioteca esta vacia");
@@ -16,6 +18,7 @@ public class Biblioteca {
             }
         }
     }
+    // clase que busca el libro a traves del titulo 
     public void buscarLibro(String titulo){
         for (Libro libro : this.libros){
            if (libro.getTitulo().equals(titulo)){

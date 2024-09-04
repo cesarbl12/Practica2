@@ -27,7 +27,7 @@ public class Libro {
         System.out.println("Año de publicacion:" + añoPublicacion);
         System.out.println("isbn:" + isbn);
     }   
-//mostrar si es antiguo o no     
+//mostrar si es antiguo o no el libro
     public boolean esAntiguo(){
         int añoActual = LocalDate.now().getYear();
 
